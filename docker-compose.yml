@@ -1,0 +1,8 @@
+version: '1'
+name: golang-builder
+services:
+  builder:
+    image: 'golang-builder-default'
+    build: .
+    volumes:
+      - ./:/build
